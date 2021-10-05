@@ -11,7 +11,6 @@ resource "aws_s3_bucket" "log_bucket" {
   acl = "log-delivery-write"
 }
 resource "aws_s3_bucket" "foo" {
-  acl = "public-read-write"
 
   bucket = "foo_name"
   versioning {
