@@ -12,4 +12,7 @@ resource "aws_s3_bucket" "log_bucket" {
   tags = {
     Demo = "log-delivery-write"
   }
+  versioning {
+    enabled = true
+  }
 }
